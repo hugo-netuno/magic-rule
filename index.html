@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Magic Rule
+  </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./app/css/w3.css">
+  <link rel="stylesheet" href="./app/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container">
+    <div id="containerA">
+      <input id="create" type="button" onclick="controller.cast(event)" value="Criar régua" />
+      <div id="numberOne"><span>1</span></div>
+      <div style="width: 250px; height: 20px; background-color: black; margin: 10px 0;">
+      </div>
+      <input style="width: 250px; height: 200px; font-size: 200px;" type="number" id="divisor" name="divisor" />
+      <input id="dividir" type="button" value="dividir" onclick="controller._ruleMarker(event)" />
+    </div>
+    <div id="containerB">
+      <header>
+        <h1>Magic Rule</h1>
+        <h2>Math Lab</h2>
+      </header>
+      <div id="ruleView"></div>
+      <div id="mensagemView"></div>
+      <footer>
+        <p>Footer</p>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+  <script src="./app/js/js.js"></script>
+  <script src="./app/js/controller/Controller.js"></script>
+  <script src="./app/js/models/Div.js"></script>
+  <script src="./app/js/models/ListaDivs.js"></script>
+  <script src="./app/js/models/Mensagem.js"></script>
+  <script src="./app/js/views/View.js"></script>
+  <script src="./app/js/views/MensagemView.js"></script>
+  <script src="./app/js/views/RuleView.js"></script>
+  <script>
+    let controller = new Controller();
+  </script>
+
+</body>
+
+</html>
